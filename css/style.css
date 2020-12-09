@@ -1,1 +1,43 @@
 /* GENERAL */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Lora', sans-serif;
+}
+
+/* DEBUG */
+
+.all-width {
+  background-color: salmon;
+}
+
+.container-fluid {
+  background-color: lightgreen;
+}
+
+.row {
+  background-color: yellow;
+}
+
+.col-lg-12 {
+  background-color: lightblue;
+}
+
+/* NAVIGATION BAR */
+
+.navbar :not(i) {
+  font-family: sans-serif;
+}
+
+.navbar-default {
+  background-color: transparent;
+  position: sticky;
+  margin: 0;
+  border: 0;
+}
+
+
+/* HEADER */

@@ -8,21 +8,32 @@
   font-family: 'Lora', sans-serif;
 }
 
-/* DEBUG */
-
 .all-width {
   background-color: salmon;
+  padding: 0 10%;
 }
 
-.container-fluid {
+/* COLORS */
+
+.orange {
+  color: #FF4612;
+}
+
+.orange-bg {
+  background-color: #FF4612;
+}
+
+/* DEBUG */
+
+.container-fluid.debug {
   background-color: lightgreen;
 }
 
-.row {
+.row.debug {
   background-color: yellow;
 }
 
-.col-lg-12 {
+.col-lg-12.debug {
   background-color: lightblue;
 }
 
@@ -39,5 +50,41 @@
   border: 0;
 }
 
+.navbar-right:hover li a {
+  color: #FF4612;
+}
+
 
 /* HEADER */
+
+/* jumbotron text */
+
+.jumbotron {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.jumbotron span.orange {
+  font-size: 1.4em;
+  padding: 0;
+  margin: 0;
+}
+
+/* carousel */
+
+.jumbotron-carousel {
+  position: relative;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-color: transparent;
+  background: transparent;
+}
+
+.carousel-inner .item img {
+  /* max-width: 100vw; */
+  /* min-height: 10vh; */
+}

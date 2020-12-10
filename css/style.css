@@ -23,19 +23,24 @@
   background-color: #FF4612;
 }
 
-/* DEBUG */
+/* DEBUG TOOLS */
 
-.container-fluid.debug {
+.debug-container {
   background-color: lightgreen;
+  min-height: 800px;
 }
 
-.row.debug {
+.debug-row {
   background-color: yellow;
+  min-height: 600px;
 }
 
-.col-lg-12.debug {
+.debug-col {
   background-color: lightblue;
+  min-height: 500px;
 }
+
+/* END DEBUG TOOLS */
 
 /* NAVIGATION BAR */
 
@@ -141,4 +146,60 @@
 .carousel-inner .item img {
   /* max-width: 100vw; */
   /* min-height: 10vh; */
+}
+
+/* MAIN */
+
+/* OUR SPECIALTIES SECTION */
+
+.specialties-section {
+  background-color: #f9f9f9;
+  /* position: relative; */
+  /* top: -50px; */
+}
+
+.specialties {
+  background-color: white;
+  position: relative;
+  top: -50px;
+}
+
+/* FOUNDER MSG */
+
+.carousel-card {
+  position: relative;
+}
+
+.carousel-card .controls {
+  min-height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  padding: 10px 20px;
+
+}
+
+.founder-msg {
+  position: relative;
+}
+
+.founder-msg img {
+  width: 100%;
+}
+
+.founder-msg .info-card {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  width: 400px;
+  padding: 10px;
+  background-color: white;
+  z-index: 10;
+}
+
+.dots-bg {
+  position: absolute;
+  right: 0%;
+  width: 30%;
 }

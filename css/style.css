@@ -25,19 +25,20 @@
 
 /* DEBUG TOOLS */
 
-.debug-container {
+.dcont {
   background-color: lightgreen;
   min-height: 800px;
 }
 
-.debug-row {
+.dr {
   background-color: yellow;
   min-height: 600px;
 }
 
-.debug-col {
+.dcol {
   background-color: lightblue;
   min-height: 500px;
+  border: solid 1px black;
 }
 
 /* END DEBUG TOOLS */
@@ -242,4 +243,35 @@
   margin-right: 10px;
   font-size: .9em;
 
+}
+
+/* CREATIVE LEADER SECTION */
+
+.orange-bar, .grey-bar {
+  float: left;
+
+  padding: 0;
+  margin: 0;
+}
+
+.grey-bar {
+  height: 4px;
+  border-bottom: solid 1px black;
+  width: 10%;
+}
+
+.orange-bar {
+  height: 4px;
+  background-color: #FF4612;
+  width: 80%;
+}
+
+.value-bar {
+  float: right;
+}
+
+.orange-bar-sm {
+  height: 2px;
+  background-color: #FF4612;
+  width: 15%;
 }

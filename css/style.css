@@ -130,12 +130,8 @@
 
 /* carousel */
 
-.carousel {
-  position: static;
-}
-
 .jumbotron-carousel {
-  position: relative;
+  background-color: salmon;
 }
 
 .carousel-control.right, .carousel-control.left {
@@ -206,6 +202,10 @@
 
 /* UPCOMING EVENTS */
 
+.upcoming-title {
+  border-bottom: solid 3px lightgrey;
+}
+
 .upcoming-section {
   background-image: url("../img/h1-img-09.jpg");
   height: 100vh;
@@ -213,7 +213,33 @@
 }
 
 .upcoming-card {
-  height: 300px;
+  background-color: #f9f9f9;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.card-slot {
+  /* height: 100px; */
+  display: flex;
+  border-bottom: solid 1px lightgrey;
+  padding: 15px;
+}
+
+.card-slot:hover {
   background-color: white;
-  margin-top: 100px;
+}
+
+.card-slot .date {
+  background-color: #FF4612;
+  height: 50%;
+  color: white;
+  margin-right: 30px;
+  padding: 3px;
+}
+
+.card-slot .info i {
+  color: #FF4612;
+  margin-right: 10px;
+  font-size: .9em;
+
 }

@@ -270,8 +270,68 @@
   float: right;
 }
 
+/* LATEST NEWS SECTION */
+
+.latest-news .boxes [class^="col-lg-"] {
+  padding: 70px;
+}
+
+
+.orange-bar-sm.latest {
+  margin: 0 auto;
+  width: 5%;
+}
+
+.latest-news .img-container .img-top {
+  background-image: url("../img/h1-blog-img-02.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 80px;
+
+}
+
+.latest-news .img-container .img-bottom {
+  background-image: url("../img/h1-blog-img-03.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 120px;
+}
+
+.img-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.img-container .tag {
+  background-color: #FF4612;
+  color: white;
+  width: 50%;
+  font-size: .8em;
+  padding: 5px 0;
+  position: absolute;
+  bottom: -5%;
+  right: 5%;
+}
+
+.img-container .tag i {
+  margin-right: 3px;
+  opacity: 70%;
+  font-size: .95em;
+}
+
+
+
+
+/****** DEFAULT ******/
+
 .orange-bar-sm {
   height: 2px;
   background-color: #FF4612;
-  width: 15%;
+  width: 50%;
+}
+
+.orange-bar-lg {
+  height: 4px;
+  background-color: #FF4612;
+  width: 50%;
 }

@@ -28,6 +28,17 @@ var app = new Vue({
       },
     ],
     // icons classes
-    icons: ['fab fa-linkedin-in','fab fa-facebook-f','fab fa-twitter','fas fa-map-marker-alt','far fa-clock','fas fa-tag','far fa-user']
+    icons: ['fab fa-linkedin-in','fab fa-facebook-f','fab fa-twitter','fas fa-map-marker-alt','far fa-clock','fas fa-tag','far fa-user'],
+    // CONTACT US
+    // hover changes logo image
+    hoverLogo: false,
+  },
+  methods: {
+    mouseover: function () {
+      this.hoverLogo = true;
+    },
+    mouseleave: function () {
+      this.hoverLogo = false;
+    }
   },
 });

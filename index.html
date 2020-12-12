@@ -461,65 +461,100 @@
 
             <div class="row row-no-gutters">
 
-              <div class="col-lg-6">
+              <!-- world map -->
+              <div class="col-md-6 map-container">
                 <img src="img/h1-contact-rev-01.png" alt="">
               </div>
 
-              <div class="col-lg-6">
+              <!-- contact us -->
+              <div class="col-md-6 contact-container">
 
                 <h1>Contact us.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
 
-                <div class="orange-bar-sm">
+                <div class="orange-bar-sm"></div>
 
-                  <form>
+                <!-- <div> -->
+                <form>
 
-                    <div class="form-group">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
 
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
+                    <input type="text" class="form-control" placeholder="Your name">
+                  </div>
 
-                      <input type="text" class="form-control" placeholder="Your name">
+                  <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="10" placeholder="Write a message"></textarea>
+                  </div>
 
-                    </div>
+                  <div class="btn-submit">
+                    <span>SEND</span>
+                    <span>→</span>
+                  </div>
 
-                    <div class="form-group">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="10" placeholder="Write a message"></textarea>
-                    </div>
-
-                    <div class="btn-submit">
-                      <span>SEND</span>
-                      <span>→</span>
-                    </div>
-
-                  </form>
-
-                </div>
+                </form>
 
               </div>
 
             </div>
+        
+            <!-- logos -->
+            <div class="row logos-row">
 
-            <div class="row">
-
-              <div class="col-lg-2 col-md-2 col-lg-offset-1 logo ">
-                <img src="img/h4-clients-img-01.png" alt="">
+              <div class="col-md-offset-1 col-md-2 logo">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == false"
+                src="img/h4-clients-img-03.png">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == true"
+                src="img/h4-clients-img-04-1.png">
               </div>
 
-              <div class="col-lg-2 col-md-2 logo ">
-                <img src="img/h4-clients-img-01.png" alt="">
+              <div class="col-md-2 logo">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == false"
+                src="img/h4-clients-img-05.png">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == true"
+                src="img/h4-clients-img-06-1.png">
               </div>
 
-              <div class="col-lg-2 col-md-2 logo ">
-                <img src="img/h4-clients-img-01.png" alt="">
+              <div class="col-md-2 logo">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == false"
+                src="img/h4-clients-img-07.png">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == true"
+                src="img/h4-clients-img-08-1.png">
               </div>
 
-              <div class="col-lg-2 col-md-2 logo ">
-                <img src="img/h4-clients-img-01.png" alt="">
+              <div class="col-md-2 logo">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == false"
+                src="img/h4-clients-img-09.png">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == true"
+                src="img/h4-clients-img-10-1.png">
               </div>
 
-              <div class="col-lg-2 col-md-2 logo ">
-                <img src="img/h4-clients-img-01.png" alt="">
+              <div class="col-md-2 logo">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == false"
+                src="img/h4-clients-img-01.png">
+                <img 
+                v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
+                v-if="hoverLogo == true"
+                src="img/h4-clients-img-02.png">
               </div>
 
             </div>
@@ -572,8 +607,6 @@
 
 
             </div>
-
-
 
           </div>
 

@@ -38,17 +38,27 @@
 
 /* NAVIGATION BAR */
 
+#main-logo {
+  margin-left: 45px;
+}
+
+.fa-search {
+  transform: rotate(90deg); 
+}
+
 .navbar :not(i) {
   font-family: sans-serif;
-  font-size: .9em;
+  font-size: .92em;
   font-weight: bolder;
 }
 
 .navbar-default {
   background-color: transparent;
-  position: sticky;
+  position: absolute;
+  z-index: 99;
   margin: 0;
   border: 0;
+  width: 100vw;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -65,21 +75,22 @@
 /* jumbotron text */
 
 .jumbotron-text h1 {
-  font-size: 3em;
+  font-size: 4em;
+  font-weight: 600;
 }
 
 .jumbotron-text h5 {
   color: #a6a6a6;
+  font-size: 1em;
 }
 
 .jumbotron-text {
   position: absolute;
-  top: 45%;
-  left: 10%;
+  bottom: 150px;
+  left: 130px;
   z-index: 10;
   background-color: transparent;
-  /* width: 35%; */
-  width: 400px;
+  width: 50%;
 }
 
 .jumbotron-text span.orange {
@@ -124,6 +135,10 @@
 
 /* carousel */
 
+.jumbo-container {
+  position: relative;
+}
+
 .jumbotron-carousel {
   padding: 0;
 }
@@ -139,80 +154,188 @@
 
 .specialties-section {
   background-color: #f9f9f9;
+  padding-bottom: 100px;
 }
+
+/* title */
+
+h1.speci {
+  margin-top: 90px;
+  font-weight: bolder;
+}
+
+p.speci {
+  color: #a6a6a6;
+  font-family: sans-serif;
+}
+
+.orange-bar-sm.speci {
+  width: 50px;
+  margin: auto;
+}
+
+.dot-speci {
+  font-size: 1.1em;
+  color: #FF4612;
+}
+
+/* images */
 
 .specialties {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: relative;
   top: -50px;
+  padding: 0 100px;
 }
 
-/* founder msg */
+.speci-img {
+  padding: 10px 10px;
+  margin: 70px 0;
+}
+
+.speci-img img {
+  width: 75%;  
+}
+
+.speci-img h4 {
+  font-size: 1em;
+}
+
+.speci-img p {
+  font-size: .9em;
+  color: #a6a6a6;
+  font-family: sans-serif;
+}
+  
+/* FOUNDER MESSAGE */
+
+/* carousel mockup  */
 
 .carousel-card {
   position: relative;
+  padding-left: 20px;
+  z-index: 10;
 }
 
 .carousel-card .controls {
   min-height: 10px;
   position: absolute;
-  left: 0;
+  left: 20px;
   bottom: 0;
-  color: white;
-  padding: 10px 20px;
-
+  color: rgb(255, 255, 255);
+  padding: 15px 18px;
 }
 
-.founder-msg {
-  position: relative;
-}
+.carousel-card .controls span {
+  padding: 5px;
+} 
 
-.founder-msg img {
+.carousel-card img {
   width: 100%;
 }
 
-.founder-msg .info-card {
-  position: absolute;
-  left: 80%;
-  top: 10%;
-  width: 400px;
-  padding: 10px;
-  background-color: white;
-  z-index: 10;
+/* founder's message card */
+
+.founder-msg {
+  position: relative;
+  z-index: 99;
+  left: -80px;
+  margin-top: 14px;
+  background-color: rgb(255, 255, 255);
+  padding: 40px 60px;
 }
 
+/* dots background */
 .dots-bg {
   position: absolute;
-  right: 0%;
-  width: 30%;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  background-color: red;
+  padding: 100px 0;
 }
+
+.dots-bg img {
+  /* padding: 100px 0; */
+}
+
+.founder-msg h3 {
+  font-weight: bolder;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.founder-msg span, p {
+  font-family: sans-serif;
+  color: #a6a6a6;
+}
+
+.founder-msg span {
+  font-size: .7em;
+}
+
+.founder-msg p {
+  font-size: .9em;
+}
+
+.founder-msg .icon-container {
+  background-color: #FF4612;
+  border-radius: 50px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+
+.founder-msg .icon-container i {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  font-size: .8em;
+  top: 50%;
+  left: 50%;
+  color: #f9f9f9;
+}
+
 
 /* UPCOMING EVENTS */
 
+.upcoming-card {
+  /* background-color: #f9f9f9; */
+  /* background-color: red; */
+  /* margin: 10%; */
+  padding: 30px 0;
+}
+
 .upcoming-title {
-  border-bottom: solid 3px lightgrey;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.upcoming-title h2 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 600;
+  
 }
 
 .upcoming-section {
   background-image: url("../img/h1-img-09.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
 }
 
-.upcoming-card {
-  background-color: #f9f9f9;
-  margin-top: 10%;
-  margin-left: 15%;
-}
 
 .card-slot {
   display: flex;
-  border-bottom: solid 1px lightgrey;
+  border-bottom: solid 1px rgb(243, 241, 241);
   padding: 15px;
+  background-color: #f9f9f9;
+  
 }
 
 .card-slot:hover {
   background-color: white;
+  box-shadow: 1px -5px 3px -2px rgb(221, 218, 218);
 }
 
 .card-slot .date {
@@ -397,3 +520,21 @@ footer {
   background-color: #FF4612;
   width: 50%;
 }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media all (min-width: 768px) { 
+  
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }

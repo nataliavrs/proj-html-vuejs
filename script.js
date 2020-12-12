@@ -26,6 +26,8 @@ var app = new Vue({
         number: '(315) 5512-2579',
         email: 'everlead@mikado.com',
       },
-    ]
+    ],
+    // icons classes
+    icons: ['fab fa-linkedin-in','fab fa-facebook-f','fab fa-twitter']
   },
 });

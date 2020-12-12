@@ -20,7 +20,7 @@
   </head>
   <body>
     <div id="app">
-
+      
       <!-- NAVIGATION BAR -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -32,9 +32,9 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <img src="img/logo-img-01.png" class="navbar-brand" href="#"></a>
+            <img src="img/logo-img-01.png" class="navbar-brand" id="main-logo" href="#"></a>
           </div>
-
+          
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -62,12 +62,12 @@
 
       <!-- HEADER -->
         <!-- jumbotron -->
-      <div class="container-fluid">
+      <div class="container-fluid jumbo-container">
 
-          <div class="row row-no-gutters carousel">
+          <div class="row row-no-gutters">
 
             <!-- main text -->
-            <div class="jumbotron-text ">
+            <div class="jumbotron-text">
               <h1>Our Team<span class="orange">.</span></h1>
               <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
 
@@ -84,135 +84,132 @@
             </div>
 
             <!-- carousel -->
-            <div class="jumbotron-carousel col-md-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides IMAGES -->
+              <div class="carousel-inner" role="listbox">
 
-                <!-- Wrapper for slides IMAGES -->
-                <div class="carousel-inner" role="listbox">
-
-                  <div class="item active">
-                    <img src="img/rev-slider-main-home-img-03.jpg" alt="...">
-                  </div>
-
-                  <div class="item">
-                    <img src="img/rev-slider-main-home-img-02.png" alt="...">
-                  </div>
-
-                  <div class="item">
-                    <img src="img/h1-rev-img-01.jpg" alt="...">
-                  </div>
-
+                <div class="item active">
+                  <img src="img/rev-slider-main-home-img-03.jpg" alt="...">
                 </div>
 
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
+                <div class="item">
+                  <img src="img/rev-slider-main-home-img-02.png" alt="...">
+                </div>
 
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                <div class="item">
+                  <img src="img/h1-rev-img-01.jpg" alt="...">
+                </div>
 
               </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
 
             </div>
 
           </div>
 
-        </div>
+      </div>
 
       <!-- MAIN -->
         <!-- our specialties -->
         <section class="specialties-section">
 
-          <div class="container specialties ">
+          <div class="container specialties">
 
-            <div class="row row-no-gutter">
+            <!-- title -->
+            <div class="row row-no-gutter text-center">
 
-              <div class="col-md-offset-1 col-md-10 text-center">
-                <h1>Our specialties</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                <hr>
+              <div class="col-md-offset-1 col-md-10">
+                <h1 class="speci">Our specialties<span class="dot-speci">.</span></h1>
+                <p class="speci">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                <div class="orange-bar-sm speci"></div>
               </div>
 
             </div>
 
-            <div class="row row-no-gutter">
+            <!-- images -->
+            <div class="row row-no-gutter text-center">
 
-              <div class="col-md-offset-2 col-md-2 text-center">
-
+              <div class="col-md-3 speci-img">
+                <img src="img/svg/svg-0.svg">
                 <h4>Knowing</h4>
-                <img src="img/svg/svg-0.svg" alt="">
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
-
               </div>
 
-              <div class="col-md-2 text-center">
-
+              <div class="col-md-3 speci-img">
+                <img src="img/svg/svg-1.svg">
                 <h4>Selling</h4>
-                <img src="img/svg/svg-1.svg" alt="">
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
-
               </div>
 
-              <div class=" col-md-2 text-center">
-
+              <div class="col-md-3 speci-img">
+                <img src="img/svg/svg-2.svg">
                 <h4>Learning</h4>
-                <img src="img/svg/svg-2.svg" alt="">
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
-
               </div>
 
-              <div class=" col-md-2 text-center">
-
+              <div class="col-md-3 speci-img">
+                <img src="img/svg/svg-3.svg">
                 <h4>Contact</h4>
-                <img src="img/svg/svg-3.svg" alt="">
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
-
               </div>
 
             </div>
 
           </div>
 
-          <!-- founder msg -->
-          <div class="container-fluid founder-msg">
+          <!-- FOUNDER MESSAGE -->
+          <div class="container">
 
-            <div class="row row-no-gutters ">
+            <div class="row row-no-gutters">
 
-              <div class="col-lg-offset-3 col-lg-5 col-md-5 col-md-offset-3">
-
-                <div class="carousel-card">
+                <div class="col-md-6 carousel-card">
                   <img src="img/h1-img-01.jpg" alt="">
                   <div class="controls orange-bg">
-                    <span>→</span>
+                    <span>←</span>
                     <span>→</span>
                   </div>
+                </div>
 
-                  <div class="info-card">
-                    <h3>Jason Bickford</h3>
-                    <span>Founder and Executive Director</span>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
+                <div class="col-md-6 founder-msg">
+                  <h3>Jason Bickford</h3>
+                  <span>Founder and Executive Director</span>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <div class="icon-container">
+                    <i :class="icons[0]"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i :class="icons[1]"></i>
+                  </div>
+                  <div class="icon-container">
+                    <i :class="icons[2]"></i>
+                  </div>
+
+                  <!-- dots background -->
+                  <div class="dots-bg hide">
+                    <img src="img/svg/svg-4.svg">
                   </div>
 
                 </div>
-
-              </div>
-
-              <div class="dots-bg">
-                <img src="img/svg/svg-4.svg" alt="">
-              </div>
-
             </div>
 
+            
+
           </div>
+
+          
 
         </section>
 
@@ -220,17 +217,15 @@
         <section class="upcoming-section">
 
           <div class="container-fluid">
-
             <div class="row">
 
-              <div class="col-md-4 col-sm-6 col-xs-8 upcoming-card">
+              <div class="col-md-offset-2 col-md-4 col-xs-6 col-xs-offset-3 upcoming-card">
 
                 <div class="upcoming-title">
                   <h2>Upcoming Events</h2>
                 </div>
 
                 <div class="card-slot">
-
                   <div class="date text-center">
                     <h5>07</h5>
                     <h5>Jan,2022</h5>
@@ -242,11 +237,9 @@
                   <h6><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138, USA</h6>
                   <h5>READ MORE</h5>
                   </div>
-
                 </div>
 
                 <div class="card-slot">
-
                   <div class="date text-center">
                     <h5>11</h5>
                     <h5>Jan,2022</h5>
@@ -258,11 +251,9 @@
                   <h6><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138, USA</h6>
                   <h5>READ MORE</h5>
                   </div>
-
                 </div>
 
                 <div class="card-slot">
-
                   <div class="date text-center">
                     <h5>21</h5>
                     <h5>Jan,2022</h5>
@@ -274,15 +265,11 @@
                   <h6><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138, USA</h6>
                   <h5>READ MORE</h5>
                   </div>
-
                 </div>
-
-
 
               </div>
 
             </div>
-
           </div>
 
         </section>

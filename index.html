@@ -20,9 +20,14 @@
   </head>
   <body>
     <div id="app">
-      
+
+      <!-- back to top button -->
+      <div id="back-top">
+        <a href="#top">↑</a>
+      </div>
+
       <!-- NAVIGATION BAR -->
-      <nav class="navbar navbar-default">
+      <nav id="top" class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -232,40 +237,45 @@
                   </div>
 
                   <div class="info">
-                  <span>Melbourne Coaching</span>
-                  <h6><i class="far fa-clock"></i>9:00am - 5:00pm,Jan 7, 2022</h6>
-                  <h6><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138, USA</h6>
-                  <h5>READ MORE</h5>
+                    <span>Melbourne Coaching</span>
+                    <h6><i :class="icons[4]"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
+                    <h6><i :class="icons[3]"></i>Cambridge, MA 02138, USA</h6>
+                    <h5>READ MORE</h5>
                   </div>
                 </div>
 
                 <div class="card-slot">
                   <div class="date text-center">
-                    <h5>11</h5>
+                    <h5>07</h5>
                     <h5>Jan,2022</h5>
                   </div>
 
                   <div class="info">
-                  <span>New York Coaching</span>
-                  <h6><i class="far fa-clock"></i>9:00am - 5:00pm,Jan 7, 2022</h6>
-                  <h6><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138, USA</h6>
-                  <h5>READ MORE</h5>
+                    <span>New York Coaching</span>
+                    <h6><i :class="icons[4]"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
+                    <h6><i :class="icons[3]"></i>Cambridge, MA 02138, USA</h6>
+                    <h5>READ MORE</h5>
                   </div>
                 </div>
 
                 <div class="card-slot">
                   <div class="date text-center">
-                    <h5>21</h5>
+                    <h5>07</h5>
                     <h5>Jan,2022</h5>
                   </div>
 
                   <div class="info">
-                  <span>London Coaching</span>
-                  <h6><i class="far fa-clock"></i>9:00am - 5:00pm,Jan 7, 2022</h6>
-                  <h6><i class="fas fa-map-marker-alt"></i>Cambridge, MA 02138, USA</h6>
-                  <h5>READ MORE</h5>
+                    <span>London Coaching</span>
+                    <h6><i :class="icons[4]"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
+                    <h6><i :class="icons[3]"></i>Cambridge, MA 02138, USA</h6>
+                    <h5>READ MORE</h5>
                   </div>
                 </div>
+
+                
+
+                
+
 
               </div>
 
@@ -281,57 +291,54 @@
 
             <div class="row row-no-gutters">
 
-              <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5">
-                <h3>Cretive Leader <span>.</span> </h3>
+              <!-- creative left -->
+              <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5 creative-left">
+                <h3>Creative Leader <span class="dot">.</span> </h3>
                 <div class="orange-bar-sm"></div>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <span>READ MORE</span>
+                <h4>READ MORE</h4>
               </div>
 
-              <div class="col-lg-5 col-md-5 col-sm-5">
+              <!-- creative right -->
+              <div class="col-lg-5 col-md-5 col-sm-5 creative-right">
 
-                <div class="">
-
-                <span>Mentorship</span>
-                <span class="value-bar">78%</span>
-                <div class="orange-bar"></div>
-                <div class="grey-bar"></div>
-
+                <div class="bar-container">
+                  <span>Mentorship</span>
+                  <span class="value-bar">78%</span>
+                  <div class="bar-unite">
+                    <div class="orange-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div> 
                 </div>
 
-                <div class="">
-
-                <span>Education</span>
-                <span class="value-bar">95%</span>
-                <div class="orange-bar"></div>
-                <div class="grey-bar"></div>
-
+                <div class="bar-container">
+                  <span>Education</span>
+                  <span class="value-bar">95%</span>
+                  <div class="bar-unite">
+                    <div class="orange-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>       
                 </div>
 
-
-                <div class="">
-
-                <span>Learning</span>
-                <span class="value-bar">65%</span>
-                <div class="orange-bar"></div>
-                <div class="grey-bar"></div>
-
+                <div class="bar-container">
+                  <span>Learning</span>
+                  <span class="value-bar">65%</span>
+                  <div class="bar-unite">
+                    <div class="orange-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>       
                 </div>
 
-                <div class="">
-
-                <span>Motivation</span>
-                <span class="value-bar">83%</span>
-                <div class="orange-bar"></div>
-                <div class="grey-bar"></div>
-
+                <div class="bar-container">
+                  <span>Motivation</span>
+                  <span class="value-bar">83%</span>
+                  <div class="bar-unite">
+                    <div class="orange-bar"></div>
+                    <div class="grey-bar"></div>
+                  </div>       
                 </div>
-
-
 
               </div>
-
 
             </div>
 
@@ -343,123 +350,45 @@
         <section class="latest-news">
 
           <div class="container-fluid">
-
+            <!-- title row -->
             <div class="row row-no-gutters">
 
               <div class="col-md-12 text-center">
-
-                <h1>Latest News<span class="orange">.</span></h1>
+                <h1>Latest News <span class="dot">.</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <div class="orange-bar-sm latest"></div>
-
               </div>
 
             </div>
-
+            <!-- images row -->
             <div class="row boxes">
 
-              <div class="col-md-4">
+              <div v-for="container in 3" class="col-md-4">
 
                 <div class="img-container">
-
                   <div class="img-top">
                   </div>
-
                   <div class="img-bottom">
                   </div>
-
                   <div class="tag text-center">
-                    <i class="fas fa-tag"></i>Business, Leading
+                    <i :class="icons[5]"></i> 
+                    <span>Business, Leading</span>
                   </div>
-
                 </div>
 
                 <div class="info-container">
-
-                  <span><i class="far fa-clock"></i>May 5, 2019</span>
-
-                  <span><i class="far fa-user"></i>Amanda Doe</span>
-
+                  <span><i :class="icons[4]"></i>May 5, 2019</span>
+                  <span><i :class="icons[6]"></i>Amanda Doe</span>
                   <h3>Next investment</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
                   <span>READ MORE</span>
-
                 </div>
-
-
 
               </div>
-
-              <div class="col-md-4">
-
-                <div class="img-container">
-
-                  <div class="img-top">
-                  </div>
-
-                  <div class="img-bottom">
-                  </div>
-
-                  <div class="tag text-center">
-                    <i class="fas fa-tag"></i>Business, Leading
-                  </div>
-
-                </div>
-
-                <div class="info-container">
-
-                  <span><i class="far fa-clock"></i>May 5, 2019</span>
-
-                  <span><i class="far fa-user"></i>Amanda Doe</span>
-
-                  <h3>Team Bulding</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                  <span>READ MORE</span>
-
-                </div>
-
-
-
-              </div>
-
-              <div class="col-md-4">
-
-                <div class="img-container">
-
-                  <div class="img-top">
-                  </div>
-
-                  <div class="img-bottom">
-                  </div>
-
-                  <div class="tag text-center">
-                    <i class="fas fa-tag"></i>Business, Leading
-                  </div>
-
-                </div>
-
-                <div class="info-container">
-
-                  <span><i class="far fa-clock"></i>May 5, 2019</span>
-
-                  <span><i class="far fa-user"></i>Amanda Doe</span>
-
-                  <h3>New Business Day</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                  <span>READ MORE</span>
-
-                </div>
-
-
-
-              </div>
-
+          
             </div>
 
-          </div>
+            </div>
 
         </section>
 

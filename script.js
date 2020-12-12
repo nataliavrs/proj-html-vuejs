@@ -28,6 +28,6 @@ var app = new Vue({
       },
     ],
     // icons classes
-    icons: ['fab fa-linkedin-in','fab fa-facebook-f','fab fa-twitter']
+    icons: ['fab fa-linkedin-in','fab fa-facebook-f','fab fa-twitter','fas fa-map-marker-alt','far fa-clock','fas fa-tag','far fa-user']
   },
 });

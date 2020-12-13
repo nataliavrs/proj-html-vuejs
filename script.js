@@ -28,11 +28,24 @@ var app = new Vue({
       },
     ],
     // icons classes
-    icons: ['fab fa-linkedin-in','fab fa-facebook-f','fab fa-twitter','fas fa-map-marker-alt','far fa-clock','fas fa-tag','far fa-user'],
+    icons: 
+      {
+      linkedin: 'fab fa-linkedin-in',
+      facebook: 'fab fa-facebook-f',
+      twitter: 'fab fa-twitter',
+      map: 'fas fa-map-marker-alt',
+      clock: 'far fa-clock',
+      tag: 'fas fa-tag',
+      avatar: 'far fa-user',
+      phone: 'fas fa-phone-alt',
+      email: 'far fa-envelope',
+      }
+    ,
     // CONTACT US
     // hover changes logo image
     hoverLogo: false,
   },
+  // FUNCTIONS TO SWIPE LOGO IMAGES ON HOVER
   methods: {
     mouseover: function () {
       this.hoverLogo = true;

@@ -145,25 +145,25 @@
             <!-- images -->
             <div class="row row-no-gutter text-center">
 
-              <div class="col-md-3 speci-img">
+              <div class="col-md-3 col-sm-3 col-xs-6 speci-img">
                 <img src="img/svg/svg-0.svg">
                 <h4>Knowing</h4>
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
               </div>
 
-              <div class="col-md-3 speci-img">
+              <div class="col-md-3 col-sm-3 col-xs-6 speci-img">
                 <img src="img/svg/svg-1.svg">
                 <h4>Selling</h4>
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
               </div>
 
-              <div class="col-md-3 speci-img">
+              <div class="col-md-3 col-sm-3 col-xs-6 speci-img">
                 <img src="img/svg/svg-2.svg">
                 <h4>Learning</h4>
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
               </div>
 
-              <div class="col-md-3 speci-img">
+              <div class="col-md-3 col-sm-3 col-xs-6 speci-img">
                 <img src="img/svg/svg-3.svg">
                 <h4>Contact</h4>
                 <p>Lorem ipsum dolor sit amet, quis consect.</p>
@@ -193,13 +193,13 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                   <div class="icon-container">
-                    <i :class="icons[0]"></i>
+                    <i :class="icons.linkedin"></i>
                   </div>
                   <div class="icon-container">
-                    <i :class="icons[1]"></i>
+                    <i :class="icons.facebook"></i>
                   </div>
                   <div class="icon-container">
-                    <i :class="icons[2]"></i>
+                    <i :class="icons.twitter"></i>
                   </div>
 
                   <!-- dots background -->
@@ -209,13 +209,9 @@
 
                 </div>
             </div>
-
-            
-
+        
           </div>
-
-          
-
+      
         </section>
 
         <!-- upcoming events -->
@@ -224,7 +220,7 @@
           <div class="container-fluid">
             <div class="row">
 
-              <div class="col-md-offset-2 col-md-4 col-xs-6 col-xs-offset-3 upcoming-card">
+              <div class="col-md-offset-2 col-md-4 col-xs-8 col-xs-offset-2 upcoming-card">
 
                 <div class="upcoming-title">
                   <h2>Upcoming Events</h2>
@@ -238,8 +234,8 @@
 
                   <div class="info">
                     <span>Melbourne Coaching</span>
-                    <h6><i :class="icons[4]"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
-                    <h6><i :class="icons[3]"></i>Cambridge, MA 02138, USA</h6>
+                    <h6><i :class="icons.clock"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
+                    <h6><i :class="icons.map"></i>Cambridge, MA 02138, USA</h6>
                     <h5>READ MORE</h5>
                   </div>
                 </div>
@@ -252,8 +248,8 @@
 
                   <div class="info">
                     <span>New York Coaching</span>
-                    <h6><i :class="icons[4]"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
-                    <h6><i :class="icons[3]"></i>Cambridge, MA 02138, USA</h6>
+                    <h6><i :class="icons.clock"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
+                    <h6><i :class="icons.map"></i>Cambridge, MA 02138, USA</h6>
                     <h5>READ MORE</h5>
                   </div>
                 </div>
@@ -266,17 +262,11 @@
 
                   <div class="info">
                     <span>London Coaching</span>
-                    <h6><i :class="icons[4]"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
-                    <h6><i :class="icons[3]"></i>Cambridge, MA 02138, USA</h6>
+                    <h6><i :class="icons.clock"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
+                    <h6><i :class="icons.map"></i>Cambridge, MA 02138, USA</h6>
                     <h5>READ MORE</h5>
                   </div>
                 </div>
-
-                
-
-                
-
-
               </div>
 
             </div>
@@ -371,14 +361,14 @@
                   <div class="img-bottom">
                   </div>
                   <div class="tag text-center">
-                    <i :class="icons[5]"></i> 
+                    <i :class="icons.tag"></i> 
                     <span>Business, Leading</span>
                   </div>
                 </div>
 
                 <div class="info-container">
-                  <span><i :class="icons[4]"></i>May 5, 2019</span>
-                  <span><i :class="icons[6]"></i>Amanda Doe</span>
+                  <span><i :class="icons.clock"></i>May 5, 2019</span>
+                  <span><i :class="icons.avatar"></i>Amanda Doe</span>
                   <h3>Next investment</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <span>READ MORE</span>
@@ -395,14 +385,16 @@
         <!-- testimonials -->
         <section class="testimonials">
 
+          <p class="bg-text">Testimonials.</p>
+
           <!-- carousel -->
           <div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
 
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -410,23 +402,27 @@
 
               <div class="item active">
                 <img src="img/h3-img-04.png" alt="...">
-
+                
                 <div class="carousel-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <h3>Cynthia Clark</h3>
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 </div>
               </div>
 
               <div class="item">
                 <img src="img/h3-img-07.png" alt="...">
+                
                 <div class="carousel-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <h3>Anne Park</h3>
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 </div>
               </div>
 
               <div class="item">
                 <img src="img/h3-img-08.png" alt="...">
                 <div class="carousel-caption">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <h3>Jennifer Ranz</h3>
+                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 </div>
               </div>
 
@@ -475,7 +471,6 @@
 
                 <div class="orange-bar-sm"></div>
 
-                <!-- <div> -->
                 <form>
 
                   <div class="form-group">
@@ -502,7 +497,7 @@
             <!-- logos -->
             <div class="row logos-row">
 
-              <div class="col-md-offset-1 col-md-2 logo">
+              <div class="col-md-offset-1 col-md-2 col-xs-3 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -513,7 +508,7 @@
                 src="img/h4-clients-img-04-1.png">
               </div>
 
-              <div class="col-md-2 logo">
+              <div class="col-md-2 col-xs-3 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -524,7 +519,7 @@
                 src="img/h4-clients-img-06-1.png">
               </div>
 
-              <div class="col-md-2 logo">
+              <div class="col-md-2 col-xs-3 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -535,7 +530,7 @@
                 src="img/h4-clients-img-08-1.png">
               </div>
 
-              <div class="col-md-2 logo">
+              <div class="col-md-2 col-xs-3 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -546,7 +541,7 @@
                 src="img/h4-clients-img-10-1.png">
               </div>
 
-              <div class="col-md-2 logo">
+              <div class="col-md-2 col-xs-3 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -565,24 +560,33 @@
 
       <!-- FOOTER -->
       <footer>
-
-        <div class="container">
+        <div class="container-fluid">
 
           <div class="row footer">
-
+            <!-- about -->
             <div class="col-md-3">
               <h4>{{titles[0]}}</h4>
               <div class="orange-bar-sm"></div>
               <p>We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success.</p>
+              <div class="icon-container">
+                <i :class="icons.linkedin"></i>
+              </div>
+              <div class="icon-container">
+                <i :class="icons.facebook"></i>
+              </div>
+              <div class="icon-container">
+                <i :class="icons.twitter"></i>
+              </div>              
             </div>
 
+            <!-- twitter -->
             <div class="col-md-3">
               <h4>{{titles[1]}}</h4>
               <div class="orange-bar-sm"></div>
               <p v-for="(tweet, index) in tweets">{{tweet.username}} {{tweet.message}}</p>
-
             </div>
 
+            <!-- important links -->
             <div class="col-md-3 links">
               <h4>{{titles[2]}}</h4>
               <div class="orange-bar-sm"></div>
@@ -591,27 +595,40 @@
               </ul>
             </div>
 
-            <div class="col-md-3">
+            <!-- contact me -->
+            <div class="col-md-3 contact-me">
               <h4>{{titles[3]}}</h4>
               <div class="orange-bar-sm"></div>
               <ul v-for="info in contact">
-                <li>{{info.address}}</li>
-                <li>{{info.number}}</li>
-                <li>{{info.email}}</li>
+                <li>
+                  <i :class="icons.map"></i>
+                  {{info.address}}
+                </li>
+                <li>
+                  <i :class="icons.phone"></i>
+                  {{info.number}}
+                </li>
+                <li>
+                  <i :class="icons.email"></i>
+                  {{info.email}}
+                </li>
               </ul>
 
-              <div class="">
-                <input type="text" name="" value="" placeholder="Your name">
-                <input type="button" name="" value="SUBSCRIBE">
+              <!-- mailing list -->
+              <div class="mailing-list">
+                <input type="text" placeholder="Your name">
+                <input type="button" value="SUBSCRIBE">
               </div>
-
-
             </div>
+          </div>
 
+          <div class="row">
+            <div class="col-md-12 orange-row">
+              Copyright Everlead 	&#169;
+            </div>
           </div>
 
         </div>
-
       </footer>
 
     </div>

@@ -45,11 +45,11 @@
 
             <ul class="nav navbar-nav navbar-right">
 
-              <li v-for="link in navLinks"><a href="#">{{link}}</a></li>
-              <li><a href="#"><i class="fas fa-search"></i></a></li>
+              <li  v-for="link in navLinks"><a class="link-nav" href="#">{{link}}</a></li>
+              <li><a href="#"><i :class="icons.search"></i></a></li>
 
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  <i class="fas fa-list"></i> </a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  <i :class="icons.list"></i> </a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -78,7 +78,7 @@
 
               <div class="btn-jumbo one">
                 <span>READ MORE</span>
-                <span>→</span>
+                <span>→</span> 
               </div>
 
               <div class="btn-jumbo two">
@@ -94,15 +94,15 @@
               <!-- Wrapper for slides IMAGES -->
               <div class="carousel-inner" role="listbox">
 
-                <div class="item active">
+                <div class="item active image-fluid">
                   <img src="img/rev-slider-main-home-img-03.jpg" alt="...">
                 </div>
 
-                <div class="item">
+                <div class="item image-fluid">
                   <img src="img/rev-slider-main-home-img-02.png" alt="...">
                 </div>
 
-                <div class="item">
+                <div class="item image-fluid">
                   <img src="img/h1-rev-img-01.jpg" alt="...">
                 </div>
 
@@ -128,6 +128,11 @@
       <!-- MAIN -->
         <!-- our specialties -->
         <section class="specialties-section">
+
+          <!-- dots background -->
+          <div class="dots-bg">
+            <img src="img/svg/svg-4.svg">
+          </div>
 
           <div class="container specialties">
 
@@ -178,7 +183,7 @@
 
             <div class="row row-no-gutters">
 
-                <div class="col-md-6 carousel-card">
+                <div class="col-md-5 carousel-card">
                   <img src="img/h1-img-01.jpg" alt="">
                   <div class="controls orange-bg">
                     <span>←</span>
@@ -200,12 +205,7 @@
                   </div>
                   <div class="icon-container">
                     <i :class="icons.twitter"></i>
-                  </div>
-
-                  <!-- dots background -->
-                  <div class="dots-bg hide">
-                    <img src="img/svg/svg-4.svg">
-                  </div>
+                  </div>                  
 
                 </div>
             </div>
@@ -220,7 +220,7 @@
           <div class="container-fluid">
             <div class="row">
 
-              <div class="col-md-offset-2 col-md-4 col-xs-8 col-xs-offset-2 upcoming-card">
+              <div class="col-md-offset-2 col-md-4 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2 upcoming-card">
 
                 <div class="upcoming-title">
                   <h2>Upcoming Events</h2>
@@ -236,7 +236,7 @@
                     <span>Melbourne Coaching</span>
                     <h6><i :class="icons.clock"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
                     <h6><i :class="icons.map"></i>Cambridge, MA 02138, USA</h6>
-                    <h5>READ MORE</h5>
+                    <h5 class="read-more">READ MORE</h5>
                   </div>
                 </div>
 
@@ -250,7 +250,7 @@
                     <span>New York Coaching</span>
                     <h6><i :class="icons.clock"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
                     <h6><i :class="icons.map"></i>Cambridge, MA 02138, USA</h6>
-                    <h5>READ MORE</h5>
+                    <h5 class="read-more">READ MORE</h5>
                   </div>
                 </div>
 
@@ -264,7 +264,7 @@
                     <span>London Coaching</span>
                     <h6><i :class="icons.clock"></i>9:00am - 5:00pm, Jan 7, 2022</h6>
                     <h6><i :class="icons.map"></i>Cambridge, MA 02138, USA</h6>
-                    <h5>READ MORE</h5>
+                    <h5 class="read-more">READ MORE</h5>
                   </div>
                 </div>
               </div>
@@ -286,7 +286,7 @@
                 <h3>Creative Leader <span class="dot">.</span> </h3>
                 <div class="orange-bar-sm"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <h4>READ MORE</h4>
+                <h4 class="read-more">READ MORE</h4>
               </div>
 
               <!-- creative right -->
@@ -339,6 +339,11 @@
         <!-- latest news -->
         <section class="latest-news">
 
+          <!-- dots background -->
+          <div class="dots-bg">
+            <img src="img/svg/svg-4.svg">
+          </div>
+          
           <div class="container-fluid">
             <!-- title row -->
             <div class="row row-no-gutters">
@@ -353,7 +358,7 @@
             <!-- images row -->
             <div class="row boxes">
 
-              <div v-for="container in 3" class="col-md-4">
+              <div v-for="container in 3" class="col-md-4 col-sm-6">
 
                 <div class="img-container">
                   <div class="img-top">
@@ -371,7 +376,7 @@
                   <span><i :class="icons.avatar"></i>Amanda Doe</span>
                   <h3>Next investment</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <span>READ MORE</span>
+                  <span class="read-more">READ MORE</span>
                 </div>
 
               </div>
@@ -462,6 +467,9 @@
                 <img src="img/h1-contact-rev-01.png" alt="">
               </div>
 
+              <!-- map dots -->
+              <img class="dot-map" src="img/h1-contact-rev-02.png">
+
               <!-- contact us -->
               <div class="col-md-6 contact-container">
 
@@ -497,7 +505,7 @@
             <!-- logos -->
             <div class="row logos-row">
 
-              <div class="col-md-offset-1 col-md-2 col-xs-3 logo">
+              <div class="col-md-offset-1 col-md-2 col-xs-2 col-xs-offset-1 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -508,7 +516,7 @@
                 src="img/h4-clients-img-04-1.png">
               </div>
 
-              <div class="col-md-2 col-xs-3 logo">
+              <div class="col-md-2 col-xs-2 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -519,7 +527,7 @@
                 src="img/h4-clients-img-06-1.png">
               </div>
 
-              <div class="col-md-2 col-xs-3 logo">
+              <div class="col-md-2 col-xs-2 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -530,7 +538,7 @@
                 src="img/h4-clients-img-08-1.png">
               </div>
 
-              <div class="col-md-2 col-xs-3 logo">
+              <div class="col-md-2 col-xs-2 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -541,7 +549,7 @@
                 src="img/h4-clients-img-10-1.png">
               </div>
 
-              <div class="col-md-2 col-xs-3 logo">
+              <div class="col-md-2 col-xs-2 logo">
                 <img 
                 v-on:mouseover="mouseover" v-on:mouseleave="mouseleave"
                 v-if="hoverLogo == false"
@@ -564,7 +572,7 @@
 
           <div class="row footer">
             <!-- about -->
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-3">
               <h4>{{titles[0]}}</h4>
               <div class="orange-bar-sm"></div>
               <p>We created Everlead to effectively become the stepping stone towards meeting all your goals & achieving business success.</p>
@@ -580,14 +588,14 @@
             </div>
 
             <!-- twitter -->
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-3">
               <h4>{{titles[1]}}</h4>
               <div class="orange-bar-sm"></div>
               <p v-for="(tweet, index) in tweets">{{tweet.username}} {{tweet.message}}</p>
             </div>
 
             <!-- important links -->
-            <div class="col-md-3 links">
+            <div class="col-md-3 col-sm-3 links">
               <h4>{{titles[2]}}</h4>
               <div class="orange-bar-sm"></div>
               <ul>
@@ -596,7 +604,7 @@
             </div>
 
             <!-- contact me -->
-            <div class="col-md-3 contact-me">
+            <div class="col-md-3 col-sm-3 contact-me">
               <h4>{{titles[3]}}</h4>
               <div class="orange-bar-sm"></div>
               <ul v-for="info in contact">

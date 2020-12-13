@@ -39,6 +39,8 @@ var app = new Vue({
       avatar: 'far fa-user',
       phone: 'fas fa-phone-alt',
       email: 'far fa-envelope',
+      search: 'fas fa-search',
+      list: 'fas fa-list',
       }
     ,
     // CONTACT US

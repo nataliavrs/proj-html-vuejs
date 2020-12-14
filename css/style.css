@@ -12,11 +12,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* button takes to nav */
+
 #back-top {
   background-color: #ffff;
   border-radius: 50px;
   padding: 10px;
-  box-shadow: 1px 1px 3px #141414;  position: fixed;
+  box-shadow: 1px 1px 3px #141414;
+  position: fixed;
   z-index: 100;
   right: 2%;
   top: 50%;
@@ -32,6 +35,8 @@ html {
  left: 50%;
  transform: translate(-50%, -50%);
 }
+
+/* icons styling */
 
 .icon-container {
   border-radius: 50px;
@@ -50,6 +55,8 @@ html {
   color: #f9f9f9;
 }
 
+/* dot background */
+
 .dots-bg {
   position: absolute;
 }
@@ -57,6 +64,8 @@ html {
 .dots-bg img {
   max-width: 350px;
 }
+
+/* orange horizontal rules */
 
 .orange-bar-sm {
   height: 2px;
@@ -69,6 +78,8 @@ html {
   background-color: #FF4612;
   width: 50%;
 }
+
+/* read more */
 
 .read-more:hover::after {
   content: "→";
@@ -85,7 +96,7 @@ html {
   margin-left: 45px;
 }
 
-.fa-search {
+.navbar .fa-search {
   transform: rotate(90deg); 
 }
 
@@ -126,16 +137,6 @@ html {
   position: relative;
 }
 
-.jumbotron-text h1 {
-  font-size: 4em;
-  font-weight: 600;
-}
-
-.jumbotron-text h5 {
-  color: #a6a6a6;
-  font-size: 1em;
-}
-
 .jumbotron-text {
   position: absolute;
   bottom: 150px;
@@ -152,7 +153,17 @@ html {
   color: #FF4612;
 }
 
-/* buttons */
+.jumbotron-text h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.jumbotron-text h5 {
+  color: #a6a6a6;
+  font-size: 1em;
+}
+
+/* jumbo buttons */
 
 .btn-jumbo {
   padding: 8px;
@@ -183,7 +194,7 @@ html {
 
 .btn-jumbo span:nth-child(2) {
   border-left: solid 1px white;
-  padding: 0 4px;
+  padding: 0 5px;
 }
 
 /* carousel */
@@ -204,13 +215,8 @@ html {
 
 /* dots background */
 .specialties-section .dots-bg {
-  position: absolute;
   right: 60px;
   bottom: 150px;
-}
-
-.dots-bg img {
-  max-width: 350px;
 }
 
 /* title */
@@ -263,7 +269,7 @@ p.speci {
   font-family: sans-serif;
 }
   
-/* FOUNDER MESSAGE */
+/* founder message */
 
 /* carousel mockup  */
 
@@ -329,13 +335,10 @@ p.speci {
   background-color: black;
 }
 
-/* UPCOMING EVENTS */
+/* UPCOMING EVENTS SECTION */
 
 .upcoming-card {
-  padding: 130px 0;
-  /* margin: 100px 0; */
-  
-  overflow: hidden;
+  padding: 130px 0;  
 }
 
 .upcoming-title {
@@ -429,7 +432,6 @@ p.speci {
 .creative-left .dot {
   color: #FF4612;
   font-size: 1.1em;
-  padding: 0;
 }
 
 .creative-left .orange-bar-sm {
@@ -598,7 +600,7 @@ p.speci {
 }
 
 .bg-text {
-  opacity: 70%;
+  opacity: 50%;
   font-size: 10em;
   position: absolute;
   top: 10%;
@@ -631,7 +633,6 @@ p.speci {
   color: #a6a6a6;
 }
 
-
 /* video bg */
 
 .video-bg {
@@ -642,25 +643,30 @@ p.speci {
   position: relative;
 }
 
-.video-container {
-  background-color: rgba(0, 0, 0, 0.637);
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
+.video-bg i {
+  font-size: 2.5em;
+  color: white;
+}
+
+.video-container, .video, .video-bg i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.video-container {
+  background-color: rgba(0, 0, 0, 0.753);
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+
 .video {
   height: 80vh;
   width: 80vw;
   margin: auto 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border: 0;
 }
 
 .hide-video {
@@ -671,16 +677,9 @@ p.speci {
   display: inline-block;
 }
 
-.video-bg i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 2.5em;
-  color: white;
-}
-
 /* CONTACT US SECTION */
+
+/* left container */
 
 .contact-us {
   margin: 70px 0;
@@ -698,7 +697,7 @@ p.speci {
   width: 22px;
 }
 
-.dot-map.ny{
+.dot-map.ny {
   top: 37%;
   left: 24%;
 }
@@ -731,7 +730,8 @@ p.speci {
 .map-container img {
   max-width: 100%;
 }
-/* contact us container */
+
+/* right container */
 
 form {
   max-width: 100%;
@@ -780,7 +780,6 @@ form {
 
 .logos-row img {
   width: 80%;
-  fill: red;
 }
 
 /* FOOTER */
@@ -855,7 +854,6 @@ footer .contact-me ul > li i {
   background-color: #0000;
   font-weight: bolder;
   border: 0;
-  /* float: right; */
   width: 80px;
   text-align: right;
   padding-top: 10px;
@@ -871,9 +869,9 @@ footer .contact-me ul > li i {
   font-size: .7em;
 }
 
-
 /* MEDIA QUERIES */
-/* Small devices (landscape phones, 576px and up) */
+
+/* Small devices (landscape phones) */
 @media (min-width: 300px) and (max-width: 767px) { 
   .founder-msg {
     position: relative;
@@ -921,7 +919,7 @@ footer .contact-me ul > li i {
 
  }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets) */
 @media (min-width: 768px) {
   .founder-msg {
     position: relative;
@@ -936,7 +934,7 @@ footer .contact-me ul > li i {
 
  }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops) */
 @media (min-width: 992px) {
   .founder-msg {
     position: relative;

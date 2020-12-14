@@ -41,12 +41,10 @@ var app = new Vue({
       email: 'far fa-envelope',
       search: 'fas fa-search',
       list: 'fas fa-list',
-      }
-    ,
-    // CONTACT US
-    // hover changes logo image
+      },
+    // CONTACT US SECTION hover changes logo image
     hoverLogo: false,
-    // open video on click
+    // TESTIMONIALS SECTION open video on click
     show: "hide-video"
   },
   methods: {

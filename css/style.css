@@ -302,7 +302,6 @@ p.speci {
   padding: 40px 60px;
 }
 
-
 .founder-msg h3 {
   font-weight: bolder;
   font-size: 2em;
@@ -352,7 +351,6 @@ p.speci {
 
 .upcoming-section {
   background-image: url("../img/h1-img-09.jpg");
-  /* min-height: 100vh; */
   background-size: cover;
 }
 
@@ -595,7 +593,7 @@ p.speci {
 
 .testimonials {
   min-height: 100vh;  
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(31, 30, 30);
   position: relative;
 }
 
@@ -644,12 +642,41 @@ p.speci {
   position: relative;
 }
 
+.video-container {
+  background-color: rgba(0, 0, 0, 0.637);
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video {
+  height: 80vh;
+  width: 80vw;
+  margin: auto 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide-video {
+  display: none;
+}
+
+.show-video {
+  display: inline-block;
+}
+
 .video-bg i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 3em;
+  font-size: 2.5em;
   color: white;
 }
 
@@ -665,8 +692,40 @@ p.speci {
 
 .dot-map {
   position: absolute;
-  left: 150px;
-  z-index: 10;
+}
+
+.dot-map img {
+  width: 22px;
+}
+
+.dot-map.ny{
+  top: 37%;
+  left: 24%;
+}
+
+.dot-map.two {
+  top: 20%;
+  right: 45%;
+}
+
+.dot-map.three {
+  bottom: 18%;
+  right: 15%;
+}
+
+.info-dot {
+  margin-top: 5px;
+  background-color: #ffff;
+  padding: 7px 25px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);}
+
+.info-dot h5 {
+  font-weight: bolder;
+}
+
+.info-dot h6 {
+  font-size: .7em;
+  font-family: sans-serif;
 }
 
 .map-container img {
@@ -782,11 +841,6 @@ footer .contact-me ul > li i {
   opacity: 60%;
 }
 
-.mailing-list {
-  /* border-bottom: solid 2px rgb(180, 175, 175); */
-  /* width: 90%; */
-}
-
 .mailing-list input[type="text"] {
   color: #ddd5d5;
   background-color: #0000;
@@ -818,21 +872,78 @@ footer .contact-me ul > li i {
 }
 
 
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) and (max-width: 767px) { 
+  .founder-msg {
+    position: relative;
+    left: 0;
+    z-index: 99;
+    padding: 30px;
+  }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+  #carousel-example-generic-2 .carousel-inner .item .carousel-caption { 
+    margin: -40px 0;
+  }
 
-/* Small devices (tablets, 768px and up) */
-@media all (min-width: 768px) { 
-  
+  .speci-img {
+    padding: 30px;
+    margin: 20px 0; 
+  }
+
+  .creative-right {
+    padding: 30px;
+  }
+
+
+  .jumbotron-text h1 {
+    font-size: 2em;
+  }
+
+  .jumbotron-text h5 {
+    color: #7c7a7a;
+    font-size: .9em;
+  }
+
+  .jumbotron-text {
+    top: 25%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    width: 60%;
+  } 
+
+  .btn-jumbo {
+    width: 35%;
+    font-size: .8em;
+    margin: 0;
+  }
+
  }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .founder-msg {
+    position: relative;
+    left: 0;
+    z-index: 99;
+    padding: 30px;
+  }
+
+  #carousel-example-generic-2 .carousel-inner .item .carousel-caption { 
+    margin: -28px 0;
+  }
 
  }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .founder-msg {
+    position: relative;
+    z-index: 99;
+    left: -80px;
+    margin-top: 14px;
+    background-color: rgb(255, 255, 255);
+    padding: 40px 60px;
+  }
  }

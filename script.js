@@ -46,14 +46,20 @@ var app = new Vue({
     // CONTACT US
     // hover changes logo image
     hoverLogo: false,
+    // open video on click
+    show: "hide-video"
   },
-  // FUNCTIONS TO SWIPE LOGO IMAGES ON HOVER
   methods: {
+    // FUNCTIONS TO SWIPE LOGO IMAGES ON HOVER
     mouseover: function () {
       this.hoverLogo = true;
     },
     mouseleave: function () {
       this.hoverLogo = false;
+    },
+    // FUNCTION TO SHOW VIDEO ON CLICK
+    openVideo: function () {
+      this.show = "show-video";
     }
   },
 });

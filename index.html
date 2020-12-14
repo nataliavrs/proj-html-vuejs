@@ -448,7 +448,14 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-12 video-bg">
-                <i class="fas fa-play"></i>
+                <i @click="openVideo" class="fas fa-play"></i>
+
+                <div :class="show" class="video-container">
+                <iframe class="video" :class="show" width="420" height="315"
+                src="https://www.youtube.com/embed/-d3_qSyTSqA?autoplay=1&mute=0&">
+                </iframe>
+              </div>
+
               </div>
             </div>
           </div>
@@ -464,12 +471,23 @@
 
               <!-- world map -->
               <div class="col-md-6 map-container">
-                <img src="img/h1-contact-rev-01.png" alt="">
+                <img src="img/h1-contact-rev-01.png" alt="World map">
+                <!-- map dots -->
+                <div class="dot-map ny">
+                  <img src="img/h1-contact-rev-02.png">
+                  <div class="info-dot">
+                    <h5>New York Coaching</h5>
+                    <h6 class="read-more">READ MORE</h6> 
+                  </div>
+                </div>
+                <div class="dot-map two">
+                  <img src="img/h1-contact-rev-02.png">
+                </div>
+                <div class="dot-map three">
+                  <img src="img/h1-contact-rev-02.png">
+                </div>
               </div>
-
-              <!-- map dots -->
-              <img class="dot-map" src="img/h1-contact-rev-02.png">
-
+                                  
               <!-- contact us -->
               <div class="col-md-6 contact-container">
 
